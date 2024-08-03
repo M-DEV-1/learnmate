@@ -30,3 +30,5 @@ MANIFEST
 # PyInstaller
 #  Usually these files are written by a python script from a template
 #  before PyInstaller bui
+
+.env

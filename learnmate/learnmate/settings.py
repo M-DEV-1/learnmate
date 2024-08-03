@@ -12,6 +12,11 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 
 from pathlib import Path
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -27,6 +32,19 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+SITE_ID = 1
+
+AUTHENTICATION_BACKENDS = [
+    
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by email
+    'allauth.account.auth_backends.AuthenticationBackend',
+    
+]
+
+LOGIN_REDIRECT_URL = 'dashboard'
 
 # Application definition
 
@@ -38,9 +56,16 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     
+    'django.contrib.sites',
+    
     'tailwind',
     'theme',
     'django_browser_reload',
+    
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.github',
     
     'main',
     
@@ -63,7 +88,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     
-    
+    "allauth.account.middleware.AccountMiddleware",
     
     
     "django_browser_reload.middleware.BrowserReloadMiddleware",
@@ -86,6 +111,17 @@ TEMPLATES = [
         },
     },
 ]
+
+SOCIALACCOUNT_PROVIDERS = {
+    'github': {
+        
+        'APP': {
+            'client_id': os.getenv('CLIENT_ID'),
+            'secret': os.getenv('CLIENT_SECRET'),
+            'key': ''
+        }
+    }
+}
 
 WSGI_APPLICATION = 'learnmate.wsgi.application'
 
