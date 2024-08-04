@@ -1,71 +1,99 @@
 {% extends 'main/base.html' %}
 
 {% block content %}
-        <div class="text-center">
-            <h1 class="font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl hover:text-pink-200 transition-colors duration-500 ease-in-out">your personalized path to academic success</h1>
-            <br>
-            <p class="mt-6 text-lg leading-8 text-white font-mono">elevate your studies with customized guidance crafted for your success. unlock your full potential with expert support tailored to your unique needs</p>
-            <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href = {% url 'account_signup' %} class="rounded-md bg-purple-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-700 transition-colors duration-300 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:animate-bounce">Get started</a>
-            </div>
-        </div>
-        </div>
+<div class="text-center">
+    <h1 class="font-sans text-4xl font-bold tracking-tight text-white sm:text-6xl hover:text-pink-200 transition-colors ease-in-out delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0"
+        data-taos-offset="300">your personalized path to academic success</h1>
+    <br>
+    <p class="mt-6 text-lg leading-8 text-white font-sans">elevate your studies with customized guidance crafted for
+        your success. unlock your full potential with expert support tailored to your unique needs</p>
+    <div class="mt-10 flex items-center justify-center gap-x-6">
+        <a href={% url 'account_signup' %}
+            class="rounded-md bg-purple-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-pink-700 transition-colors duration-300 ease-in-out focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 hover:animate-bounce">Get
+            started</a>
+    </div>
+</div>
+</div>
 
-        <!-- CONTENT AFTER HERO SECTION -->
-        <div class="py-12 sm:py-20 mb-32"> 
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:text-center">
-            <p class="mt-2 text-5xl font-bold tracking-tight text-white sm:text-5xl  hover:animate-ping transition-transform hover:scale-130 hover:ease-in-out">Learn faster. Learn better.</p>
-            <p class="mt-6 text-lg leading-8 text-gray-300">we’re committed to helping you learn to your fullest potential. <br><strong class="animate-pulse text-pretty text-neutral-50">no boundaries, no limits.</strong></p>
-            </div>
-            <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-4xl">
+<!-- CONTENT AFTER HERO SECTION -->
+<div class="py-12 sm:py-20 mb-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl lg:text-center">
+            <p class=" delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0 mt-2 text-5xl font-bold tracking-tight text-white sm:text-5xl  hover:animate-ping transition-transform hover:scale-130 hover:ease-in-out"
+                data-taos-offset="300">Learn faster. Learn better.</p>
+            <p class="mt-6 text-lg leading-8 text-gray-300">we’re committed to helping you learn to your fullest
+                potential. <br><strong class="animate-pulse text-pretty text-neutral-50">no boundaries, no
+                    limits.</strong></p>
+        </div>
+        <div class="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-16 lg:max-w-4xl">
             <dl class="grid max-w-xl grid-cols-1 gap-x-8 gap-y-5 lg:max-w-none lg:grid-cols-2 lg:gap-y-16">
                 <div class="relative pl-16">
-                <dt class="text-base font-semibold leading-7 text-white">
-                    <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
-                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
-                    </svg>
-                    </div>
-                    Upload Study Material
-                </dt>
-                <dd class="mt-2 text-base leading-7 text-gray-300">Upload your PDFs, PPTs, and lecture notes, and receive personalized explanations and study plans crafted to suit your needs perfectly.</dd>
+                    <dt class="text-base font-semibold leading-7 text-white">
+                        <div
+                            class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
+                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M12 16.5V9.75m0 0l3 3m-3-3l-3 3M6.75 19.5a4.5 4.5 0 01-1.41-8.775 5.25 5.25 0 0110.233-2.33 3 3 0 013.758 3.848A3.752 3.752 0 0118 19.5H6.75z" />
+                            </svg>
+                        </div>
+                        Upload Study Material
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-300">Upload your PDFs, PPTs, and lecture notes, and
+                        receive personalized explanations and study plans crafted to suit your needs perfectly.</dd>
                 </div>
                 <div class="relative pl-16">
-                <dt class="text-base font-semibold leading-7 text-white">
-                    <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
-                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
-                    </svg>
-                    </div>
-                    Task Scheduler
-                </dt>
-                <dd class="mt-2 text-base leading-7 text-gray-300">Share your tasks and deadlines, and get a custom schedule with smart reminders, perfectly tailored to keep you organized and on top of everything.</dd>
+                    <dt class="text-base font-semibold leading-7 text-white">
+                        <div
+                            class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
+                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.5 10.5V6.75a4.5 4.5 0 10-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 002.25-2.25v-6.75a2.25 2.25 0 00-2.25-2.25H6.75a2.25 2.25 0 00-2.25 2.25v6.75a2.25 2.25 0 002.25 2.25z" />
+                            </svg>
+                        </div>
+                        Task Scheduler
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-300">Share your tasks and deadlines, and get a custom
+                        schedule with smart reminders, perfectly tailored to keep you organized and on top of
+                        everything.</dd>
                 </div>
                 <div class="relative pl-16">
-                <dt class="text-base font-semibold leading-7 text-white">
-                    <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
-                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
-                    </div>
-                    Progress Tracker
-                </dt>
-                <dd class="mt-2 text-base leading-7 text-gray-300">Keep tabs on your study journey with real-time progress updates and personalized milestones, designed to keep you motivated and moving forward.</dd>
+                    <dt class="text-base font-semibold leading-7 text-white">
+                        <div
+                            class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
+                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                            </svg>
+                        </div>
+                        Progress Tracker
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-300">Keep tabs on your study journey with real-time
+                        progress updates and personalized milestones, designed to keep you motivated and moving forward.
+                    </dd>
                 </div>
                 <div class="relative pl-16">
-                <dt class="text-base font-semibold leading-7 text-white">
-                    <div class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
-                    <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-                    </svg>
-                    </div>
-                    Quiz & Flashcard Generators
-                </dt>
-                <dd class="mt-2 text-base leading-7 text-gray-300">Dive into interactive quizzes, flashcards, and practice exercises crafted to match your study materials, making learning both fun and effective.</dd>
+                    <dt class="text-base font-semibold leading-7 text-white">
+                        <div
+                            class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600 hover:bg-pink-700 transition-colors duration-300 ease-in-out">
+                            <svg class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                                stroke="currentColor" aria-hidden="true">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
+                            </svg>
+                        </div>
+                        Quiz & Flashcard Generators
+                    </dt>
+                    <dd class="mt-2 text-base leading-7 text-gray-300">Dive into interactive quizzes, flashcards, and
+                        practice exercises crafted to match your study materials, making learning both fun and
+                        effective.</dd>
                 </div>
             </dl>
-            </div>
         </div>
-        </div>
-  {% endblock %}
+    </div>
+</div>
+
+
+{% endblock %}

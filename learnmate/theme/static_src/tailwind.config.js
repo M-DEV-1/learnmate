@@ -40,6 +40,11 @@ module.exports = {
          * and make sure the pattern below matches your project structure.
          */
         // '../../**/*.py'
+        {
+            relative: true,
+            transform: (content) => content.replace(/taos:/g, ''),
+            files: ['./src/*.{html,js}'],
+        },
     ],
     theme: {
         extend: {},
@@ -53,5 +58,11 @@ module.exports = {
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
         require('@tailwindcss/aspect-ratio'),
+        require('taos/plugin')
     ],
+    safelist: [
+        '!duration-[0ms]',
+        '!delay-[0ms]',
+        'html.js :where([class*="taos:"]:not(.taos-init))'
+      ],
 }

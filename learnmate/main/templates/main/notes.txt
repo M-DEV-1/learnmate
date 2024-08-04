@@ -11,3 +11,25 @@
 
 
 When going to production you should run python manage.py collectstatic
+
+
+<li class="py-4">
+            <div class="flex items-center">
+                <input id="todo2" name="todo2" type="checkbox"
+                    class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
+                <label for="todo2" class="ml-3 block text-gray-900">
+                    <span class="text-lg font-medium">Buy groceries</span>
+                    <span class="text-sm font-light text-gray-500">Bananas, milk, bread</span>
+                </label>
+            </div>
+        </li>
+        <li class="py-4">
+            <div class="flex items-center">
+                <input id="todo3" name="todo3" type="checkbox"
+                    class="h-4 w-4 text-teal-600 focus:ring-teal-500 border-gray-300 rounded">
+                <label for="todo3" class="ml-3 block text-gray-900">
+                    <span class="text-lg font-medium">Go for a run</span>
+                    <span class="text-sm font-light text-gray-500">3 miles</span>
+                </label>
+            </div>
+        </li>
