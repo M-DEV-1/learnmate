@@ -62,10 +62,15 @@ INSTALLED_APPS = [
     'theme',
     'django_browser_reload',
     
+    'allauth_ui',
+    
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
     'allauth.socialaccount.providers.github',
+    
+    'widget_tweaks',
+    'slippers',
     
     'main',
     
@@ -76,6 +81,8 @@ TAILWIND_APP_NAME = 'theme'
 INTERNAL_IPS = [
     "127.0.0.1",
 ]
+
+ALLAUTH_UI_THEME = "night"
 
 NPM_BIN_PATH = "C:/Program Files/nodejs/npm.cmd"
 

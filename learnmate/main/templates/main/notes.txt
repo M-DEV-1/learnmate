@@ -10,4 +10,4 @@
         {% endif %}
 
 
-
+When going to production you should run python manage.py collectstatic
