@@ -10,6 +10,9 @@ def home(request):
 def dashboard(request):
     return render(request, 'main/dashboard.html')
 
+def aboutus(request):
+    return render(request, 'main/aboutus.html')
+
 @login_required
 def scheduler(request):
     return render(request, 'main/scheduler.html')
@@ -19,6 +22,9 @@ def tasks(request):
     return render(request, 'main/tasks.html')
 
 @login_required
+def assistant(request):
+    return render(request, 'main/assistant.html')
+
 @login_required
 def todo_list(request):
     if request.method == 'POST':
